@@ -28,12 +28,3 @@ cp ojdbc6-11.2.0.3.jar $JBOSS_HOME/modules/system/layers/base/com/oracle/ojdbc6/
 cp module.xml $JBOSS_HOME/modules/system/layers/base/com/oracle/ojdbc6/main/
 
 $JBOSS_HOME/bin/jboss-cli.sh --file=standalone-configuration.cli
-
-# SQL> select name from v$pdbs;
-# SQL> alter session set container = xepdb1;
-# SQL> show con_name;
-
-# CREATE USER keycloak IDENTIFIED BY password;
-# GRANT CONNECT TO keycloak;
-# GRANT RESOURCE, DBA TO keycloak;
-# GRANT UNLIMITED TABLESPACE TO keycloak;
