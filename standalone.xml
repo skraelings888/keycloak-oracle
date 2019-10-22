@@ -139,7 +139,7 @@
                     </security>
                 </datasource>
                 <datasource jndi-name="java:jboss/datasources/KeycloakDS" pool-name="KeycloakDS" enabled="true" use-java-context="true" use-ccm="true">
-                    <connection-url>jdbc:oracle:thin:@${env.ORACLE_TCP_ADDR:191.232.38.175}:${env.ORACLE_TCP_PORT:8080}/${env.ORACLE_DATABASE:XEPDB1}</connection-url>
+                    <connection-url>jdbc:oracle:thin:@${env.ORACLE_TCP_ADDR:meusovos.com}:${env.ORACLE_TCP_PORT:8080}/${env.ORACLE_DATABASE:XEPDB1}</connection-url>
                     <driver>oracle</driver>
                     <pool>
                         <flush-strategy>IdleConnections</flush-strategy>
