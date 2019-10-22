@@ -1,5 +1,5 @@
 /subsystem=datasources/data-source=KeycloakDS: remove()
-/subsystem=datasources/data-source=KeycloakDS: add(jndi-name=java:jboss/datasources/KeycloakDS,enabled=true,use-java-context=true,use-ccm=true, connection-url=jdbc:oracle:thin:@${env.ORACLE_TCP_ADDR:191.232.38.175}:${env.ORACLE_TCP_PORT:8080}/${env.ORACLE_DATABASE:xe}, driver-name=oracle)
+/subsystem=datasources/data-source=KeycloakDS: add(jndi-name=java:jboss/datasources/KeycloakDS,enabled=true,use-java-context=true,use-ccm=true, connection-url=jdbc:oracle:thin:@${env.ORACLE_TCP_ADDR:meusovos.com}:${env.ORACLE_TCP_PORT:8080}/${env.ORACLE_DATABASE:xe}, driver-name=oracle)
 /subsystem=datasources/data-source=KeycloakDS: write-attribute(name=user-name, value=${env.ORACLE_USER:keycloak})
 /subsystem=datasources/data-source=KeycloakDS: write-attribute(name=password, value=${env.ORACLE_PASSWORD:password})
 /subsystem=datasources/data-source=KeycloakDS: write-attribute(name=check-valid-connection-sql, value="SELECT 1 FROM DUAL")
